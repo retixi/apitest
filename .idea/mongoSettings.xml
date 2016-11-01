@@ -13,6 +13,15 @@
           </option>
           <option name="userDatabase" value="xiaozhu" />
         </ServerConfiguration>
+        <ServerConfiguration>
+          <option name="label" value="renxi" />
+          <option name="serverUrls">
+            <list>
+              <option value="localhost:27017" />
+            </list>
+          </option>
+          <option name="userDatabase" value="local" />
+        </ServerConfiguration>
       </list>
     </option>
   </component>
