@@ -1,23 +1,12 @@
-var express = require('express');
-var bodyParser = require('body-parser');
 var mongojs=require('mongojs');
 var db = mongojs('local', ['users']);
-console.log('connetion');
-//var multipart = require('connect-multiparty');
-//var multipartMiddleware = multipart();
-//var morgan = require('morgan');
-var app = express();
-var server = require('http').createServer(app);
-app.set('views','./views');
-app.set('view engine','ejs');
-app.use(bodyParser.json({limit: '1mb'}));  //这里指定参数使用 json 格式
-app.use(bodyParser.urlencoded({
-    extended: true
-}));
+
+module.exports=function (app) {
+
 
 app.get('/users',function (req,res) {
     res.render('users.ejs');
-})
+});
 
 //用户注册
 app.post('/users', function (req, res) {
@@ -157,4 +146,4 @@ app.get('/events',function (req,res) {
 })
 
 
-server.listen(3000);
+}
