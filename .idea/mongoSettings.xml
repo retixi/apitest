@@ -22,6 +22,18 @@
           </option>
           <option name="userDatabase" value="local" />
         </ServerConfiguration>
+        <ServerConfiguration>
+          <option name="authenticationMechanism" value="SCRAM-SHA-1" />
+          <option name="label" value="zhangzhihua" />
+          <option name="password" value="p821161102" />
+          <option name="serverUrls">
+            <list>
+              <option value="happyCoupon.zhihuazhang.net:27017" />
+            </list>
+          </option>
+          <option name="userDatabase" value="presentchat" />
+          <option name="username" value="zhihuazhang" />
+        </ServerConfiguration>
       </list>
     </option>
   </component>
