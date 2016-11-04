@@ -1,12 +1,29 @@
-<form method="post">
-    uid:<br>
-    <input type="text" name="uid">
-    <br>
-    password:<br>
-    <input type="text" name="password">
-    <br>
-    <br>
-    <input type="submit" value="Submit">
-    <br>
-<br>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<br><br>
+<div class="container" style="font-family: 'Microsoft JhengHei UI Light'">
+    <div class="col-md-4 col-lg-offset-4">
+
+    <form class="form-signin" role="form" method="post">
+        <div align="middle">
+        <img src="http://img1.cache.netease.com/game/wow/conghan/wow_Succubus_cosplay_225_330.jpg">
+        </div>
+            <h2 class="form-signin-heading">输入用户名登录</h2>
+        <input name="uid" class="form-control" placeholder="Uid" required="" autofocus="">
+        <br>
+        <input name="password" type="password" class="form-control" placeholder="Password" required="">
+        <br>
+        <div class="checkbox"></div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">登 录</button>
+    </form>
+    </div>
+</div>
+</body>

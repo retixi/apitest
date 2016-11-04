@@ -1,10 +1,12 @@
 var express = require('express');
 var bodyParser = require('body-parser');
+var path=require('path')
 //var multipart = require('connect-multiparty');
 //var multipartMiddleware = multipart();
 //var morgan = require('morgan');
 var app = express();
 var server = require('http').createServer(app);
+app.use(express.static(path.join(__dirname, 'public')));
 app.set('views','./client/views');
 app.set('view engine','ejs');
 app.use(bodyParser.json({limit: '1mb'}));  //这里指定参数使用 json 格式
